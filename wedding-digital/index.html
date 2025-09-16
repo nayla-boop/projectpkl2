@@ -1,0 +1,81 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Undangan Pernikahan Bintara & Zahira</title>
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Fonts & icons -->
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Playball&family=Parisienne&family=Cormorant:ital@1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <style>
+    /* copy style dari file kamu */
+    .font-garamond { font-family: 'EB Garamond', serif; }
+    .font-Parisienne { font-family: 'Parisienne', cursive; }
+    .font-cormorant { font-family: 'Cormorant Garamond', serif; }
+    .font-playball { font-family: "Playball", cursive; }
+    .scrollbar-hide::-webkit-scrollbar { display: none; }
+    .scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
+  </style>
+</head>
+<body class="text-gray-800 font-serif">
+
+  <!-- PLACEHOLDERS: setiap partial akan dimasukkan di sini -->
+  <div id="cover"></div>
+  <div id="bunga-salam"></div>
+  <div id="profile"></div>
+  <div id="gallery-hero"></div>
+  <div id="wrapper-main"></div>
+  <div id="rsvp"></div>
+  <div id="gallery-section"></div>
+  <div id="love-story"></div>
+  <div id="weddinggift"></div>
+  <div id="messages"></div>
+  <div id="footer"></div>
+
+  <!-- Loader: ambil partial lalu setelah selesai load main.js -->
+  <script>
+    const parts = [
+      { id: "cover", file: "partials/cover.html" },
+      { id: "bunga-salam", file: "partials/bunga-salam.html" }, // opsional
+      { id: "profile", file: "partials/profile.html" },
+      { id: "gallery-hero", file: "partials/gallery-hero.html" },
+      { id: "wrapper-main", file: "partials/wrapper-main.html" },
+      { id: "rsvp", file: "partials/rsvp.html" },
+      { id: "gallery-section", file: "partials/gallery-section.html" },
+      { id: "love-story", file: "partials/love-story.html" },
+      { id: "weddinggift", file: "partials/weddinggift.html" },
+      { id: "messages", file: "partials/messages.html" },
+      { id: "footer", file: "partials/footer.html" }
+    ];
+
+    async function loadParts() {
+      await Promise.all(parts.map(async p => {
+        try {
+          const res = await fetch(p.file);
+          if (!res.ok) {
+            console.error("Failed to load", p.file, res.status);
+            return;
+          }
+          const html = await res.text();
+          document.getElementById(p.id).innerHTML = html;
+        } catch (err) {
+          console.error("Error loading", p.file, err);
+        }
+      }));
+
+      // setelah semua partial dimasukkan => muat main.js yang berisi semua event listener / fungsi
+      const s = document.createElement('script');
+      s.src = "assets/js/main.js";
+      document.body.appendChild(s);
+    }
+
+    loadParts();
+  </script>
+</body>
+</html>

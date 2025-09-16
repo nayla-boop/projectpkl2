@@ -1,0 +1,63 @@
+<section class="py-10 px-0 pt-6 text-center">
+
+  <!-- Full-width gradient background title -->
+  <div class="w-full bg-gradient-to-r from-[#7C9084] to-[#40584A] py-4 md:py-6 shadow-md mb-14">
+    <h2 class="font-Parisienne text-xl md:text-4xl text-white">
+      Love is in the air
+    </h2>
+  </div>
+
+  <!-- Card: Glassmorphism Style -->
+  <div class="relative max-w-4xl mx-auto bg-[#5B8154]/20 backdrop-blur-lg rounded-3xl p-10 shadow-xl border border-white/30">
+
+    <!-- Bunga Dekoratif Responsif di Pojok Kiri Atas -->
+    <img src="/img/bunga rsvp.png" alt="Bunga Hias" 
+         class="absolute 
+                -top-16 -left-16 w-[250px]
+                sm:-top-18 sm:-left-16 sm:w-[280px]
+                md:-top-22 md:-left-[100px] md:w-[350px]
+                lg:-top-28 lg:-left-[130px] lg:w-[400px]
+                rotate-[15deg] pointer-events-none select-none" />
+
+    <!-- Image Pasangan -->
+    <div class="mt-10 mb-8">
+      <img src="/img/rs.jpg" alt="RSVP Couple"
+           class="w-[65%] h-[300px] mx-auto object-cover rounded-3xl shadow-xl" />
+    </div>
+
+    <!-- Form RSVP -->
+    <div class="max-w-2xl mx-auto text-[#625F55]">
+      <h3 class="text-2xl font-semibold mb-4">RSVP</h3>
+      <p class="text-sm mb-6">
+        Merupakan suatu kehormatan dan kebahagiaan bagi kami sekeluarga apabila Bapak/Ibu/Saudara/i berkenan hadir dan memberikan doa restu pada kami. Untuk keperluan data tamu, kami sangat mengharapkan konfirmasi kehadiran.
+      </p>
+
+      <form>
+        <input type="text" placeholder="Nama" class="w-full mb-4 p-3 border rounded-md bg-white text-black" />
+
+        <label class="block mb-1 text-left text-sm font-medium">Jumlah Tamu Undangan</label>
+        <select class="w-full mb-4 p-3 border rounded-md bg-white text-black">
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+        </select>
+
+        <label class="block mb-1 text-left text-sm font-medium">Konfirmasi Kehadiran</label>
+        <div class="flex flex-col items-start mb-4 space-y-2">
+          <label class="flex items-center space-x-2">
+            <input type="radio" name="kehadiran" />
+            <span>Hadir</span>
+          </label>
+          <label class="flex items-center space-x-2">
+            <input type="radio" name="kehadiran" />
+            <span>Maaf, saya tidak bisa hadir</span>
+          </label>
+        </div>
+
+        <button type="submit" class="w-[50%] bg-[#778D80] hover:bg-[#90a48a] text-white py-2 rounded-3xl">
+          Submit
+        </button>
+      </form>
+    </div>
+  </div>
+</section>

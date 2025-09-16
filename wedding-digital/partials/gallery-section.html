@@ -1,0 +1,47 @@
+<!-- GALLERY SECTION -->
+<section class="relative py-10 px-4">
+  <!-- Judul -->
+  <h2 class="font-Parisienne text-3xl md:text-4xl text-center mb-8 text-[#3e5744]">Gallery</h2>
+
+  <!-- Wrapper -->
+  <div class="max-w-5xl mx-auto bg-[#A7B9A1]/40 backdrop-blur-md p-6 md:p-10 rounded-2xl shadow-lg">
+
+    <!-- DESKTOP (2 kolom) -->
+    <div class="hidden md:grid grid-cols-2 gap-4">
+      <!-- KIRI -->
+      <div class="flex flex-col gap-4">
+        <img src="/img/glr2.jpg" alt="Gallery 1" class="w-full h-[230px] object-cover rounded-xl shadow" />
+        <img src="/img/enam.jpg" alt="Gallery 2" class="w-full h-[230px] object-cover rounded-xl shadow" />
+        <img src="/img/rsvp.jpg" alt="Gallery 3" class="w-full h-[230px] object-cover rounded-xl shadow" />
+      </div>
+      <!-- KANAN -->
+      <div class="flex flex-col gap-4">
+        <img src="/img/empat.jpg" alt="Gallery 4" class="w-full h-[475px] object-cover rounded-xl shadow" />
+        <img src="/img/2.jpg" alt="Gallery 5" class="w-full h-[230px] object-cover rounded-xl shadow" />
+      </div>
+    </div>
+
+    <!-- MOBILE (1 kolom dengan variasi layout) -->
+    <div class="flex flex-col gap-4 md:hidden">
+      <!-- 1a -->
+      <img src="/img/glr2.jpg" alt="Gallery 1"
+           class="w-full h-[160px] object-cover rounded-xl shadow" />
+
+      <!-- 2 (2 gambar dalam 1 baris) -->
+      <div class="flex gap-4">
+        <img src="/img/enam.jpg" alt="Gallery 2"
+             class="w-1/2 h-[120px] object-cover rounded-xl shadow" />
+        <img src="/img/rsvp.jpg" alt="Gallery 3"
+             class="w-1/2 h-[120px] object-cover rounded-xl shadow" />
+      </div>
+
+      <!-- 1b -->
+      <img src="/img/empat.jpg" alt="Gallery 4"
+           class="w-full h-[160px] object-cover rounded-xl shadow" />
+
+      <!-- 1c -->
+      <img src="/img/2.jpg" alt="Gallery 5"
+           class="w-full h-[280px] object-cover rounded-xl shadow" />
+    </div>
+  </div>
+</section>
