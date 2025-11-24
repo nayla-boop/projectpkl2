@@ -1,36 +1,51 @@
 <!-- WRAPPER UTAMA -->
 <div class="min-h-screen flex flex-col md:flex-row justify-center items-center gap-4 p-4">
 
-  <!-- DESKTOP VIEW (Hitam) -->
-  <div class="bg-[#A7B9A1]/40 backdrop-blur-md hidden md:block w-[1000px] rounded-t-[600px] overflow-hidden shadow-xl text-black">
-    
+  <!-- DESKTOP VIEW -->
+  <div class="hidden md:block w-[800px] bg-[#A7B9A1]/40 backdrop-blur-md 
+     rounded-t-[500px]  shadow-xl text-black p-6">
+
     <!-- Akad -->
-    <div class="px-6 pt-20 text-center">
-      <h2 class="mt-12 text-7xl font-Parisienne">Akad Nikah</h2>
-      <p class="mt-2 text-xl font-cormorant">Selasa, 08 Agustus 2028<br>08.00 WIB</p>
-      <p class="mt-2 text-3xl font-playball">Grand Mosque</p>
-      <p class="text-3xl font-playball pb-10">Jl. Biasa No. 12, Jakarta Selatan</p>
-      <button class="w-[20%] bg-[#778D80] hover:bg-[#90a48a] text-white py-2 rounded-3xl">
+    <div class="text-center space-y-4">
+      <h2 class="text-6xl font-Parisienne text-[#55685e] pt-6">Akad Nikah</h2>
+      <p class="text-xl font-cormorant text-gray-700">
+        Selasa, 08 Agustus 2028 <br>
+        <span class="text-[#55685e] font-semibold">08.00 WIB</span>
+      </p>
+      <p class="text-4xl font-playball text-[#55685e]">Istiqlal Mosque</p>
+      <p class="text-xl font-cormorant text-gray-700 max-w-xl mx-auto">
+        Jl. Katedral, Sawah Besar, Jakarta Pusat
+      </p>
+      <a href="https://maps.app.goo.gl/2yikA6BwJXaEt49o7"
+         class="inline-block px-10 py-3 bg-[#7c8f84] hover:bg-[#8fa396] text-white rounded-full shadow-md">
         Lihat Lokasi
-      </button>
+      </a>
     </div>
 
-    <!-- Gambar -->
-    <div class="mt-6 px-6 flex justify-center">
-      <img src="img/enam.jpg" alt="couple" class="rounded-lg w-[800px] shadow-md" />
+    <!-- FOTO -->
+    <div class="mt-8 flex justify-center">
+      <img src="img/enam.jpg" class="rounded-lg w-[600px] shadow-md">
     </div>
 
     <!-- Resepsi -->
-    <div class="px-6 pt-6 pb-10 text-center">
-      <h2 class="text-7xl font-Parisienne">Resepsi</h2>
-      <p class="mt-2 text-2xl font-cormorant">Rabu, 09 Agustus 2028<br>08.00 WIB</p>
-      <p class="mt-2 text-3xl font-playball">Nayla's Home</p>
-      <p class="pb-10 font-playball">Jl. Biasa No. 12, Jakarta Selatan</p>
-      <button class="w-[20%] bg-[#778D80] hover:bg-[#90a48a] text-white py-2 rounded-3xl">
+    <div class="text-center mt-10 space-y-4">
+      <h2 class="text-7xl font-Parisienne text-[#55685e]">Resepsi</h2>
+      <p class="text-xl font-cormorant text-gray-700">
+        Rabu, 09 Agustus 2028 <br>
+        <span class="text-[#55685e] font-semibold">08.00 WIB</span>
+      </p>
+      <p class="text-4xl font-playball text-[#55685e]">Nayla's Home</p>
+      <p class="text-xl font-cormorant text-gray-700 max-w-xl mx-auto">
+        Blok FB5 Nomor, Jl. Purwakarta, Cluster Menteng - Bintaro
+      </p>
+      <a href="https://maps.app.goo.gl/ADXxDD4BE7QhDnbN6"
+         class="inline-block px-10 py-3 bg-[#7c8f84] hover:bg-[#8fa396] text-white rounded-full shadow-md">
         Lihat Lokasi
-      </button>
+      </a>
     </div>
+
   </div>
+  <!-- END DESKTOP VIEW -->
 
   <!-- MOBILE VIEW (Hitam) -->
   <div class=" md:hidden w-full max-w-[360px] mx-auto text-center text-black">
@@ -38,7 +53,7 @@
     <!-- Judul -->
     <div class="mb-4">
       <p class="text-sm italic">Save The Date</p>
-      <h1 class="text-2xl font-Parisienne">David & Nayla</h1>
+      <h1 class="text-2xl font-Parisienne">Mior & Nayla</h1>
       <p class="text-sm font-garamond">08/08/2028</p>
     </div>
 
@@ -62,53 +77,67 @@
       </div>
     </div>
 <!-- Isi Oval Background -->
-<div class="bg-[#A7B9A1]/40 backdrop-blur-md rounded-[250px] px-4 py-6 max-w-l mx-auto space-y-6 text-[#3e5744]">
+<div class="bg-[#A7B9A1]/40 backdrop-blur-md rounded-[250px] px-6 py-10 mx-auto max-w-md text-[#3e5744] space-y-12">
 
   <!-- Akad Nikah -->
-  <div class="text-center">
-    <div class="flex justify-center mb-2">
-      <img src="img/cincin.png" alt="Akad Icon" class="h-16" />
+  <div class="text-center space-y-4">
+    <div class="flex justify-center">
+      <img src="img/cincin.png" alt="Akad Icon" class="h-14" />
     </div>
-    <h3 class="font-Parisienne text-4xl mb-2">Akad Nikah</h3>
-    <div class="px-16">
-      <div class="flex items-center justify-between gap-4 font-medium">
-        <span class="pt-6 font-garamond text-xl">Selasa</span>
-        <div class="text-center w-12">
-          <p class="text-3xl pt-0 font-garamond">[08]</p> <!-- pt-2 agar lebih rapat -->
-          <p class="text-sm font-garamond">Agustus</p>
-        </div>
-        <span class="pt-6 font-garamond text-xl">2028</span>
+
+    <h3 class="font-Parisienne text-4xl">Akad Nikah</h3>
+
+    <!-- Tanggal -->
+    <div class="flex items-center justify-center gap-6 font-garamond">
+      <span class="text-xl">Selasa</span>
+      <div class="text-center">
+        <p class="text-3xl font-semibold">08</p>
+        <p class="text-xs tracking-wide">Agustus</p>
       </div>
+      <span class="text-xl">2028</span>
     </div>
-    <p class="mt-2 text-lg font-garamond">08.00 WIB</p>
-    <p class="italic text-sm font-garamond">Grand Mosque</p>
-    <p class="text-sm">Jl. Binus No. 12, Jakarta Selatan</p>
-    <button class="mt-2 bg-[#778D80] text-white text-sm px-3 py-1 rounded-full">Lihat Lokasi</button>
+
+    <!-- Waktu & Tempat -->
+    <p class="text-lg font-garamond">08.00 WIB</p>
+    <p class="text-2xl font-playball text-[#55685e]">Istiqlal Mosque</p>
+    <p class="text-base font-cormorant max-w-xs mx-auto leading-relaxed">
+      Jl. Katedral, Sawah Besar, Jakarta Pusat
+    </p>
+
+    <a href="https://maps.app.goo.gl/2yikA6BwJXaEt49o7"
+       class="inline-block mt-2 px-8 py-2.5 bg-[#7c8f84] hover:bg-[#8fa396] text-white rounded-full shadow-md text-sm font-medium">
+      Lihat Lokasi
+    </a>
   </div>
 
   <!-- Resepsi -->
-  <div class="text-center">
-    <div class="flex justify-center mb-2">
-      <img src="img/resepsi.png" alt="Resepsi Icon" class="h-16" />
+  <div class="text-center space-y-4">
+    <div class="flex justify-center">
+      <img src="img/resepsi.png" alt="Resepsi Icon" class="h-14" />
     </div>
-    <h3 class="font-Parisienne text-4xl mb-2">Resepsi</h3>
-    <div class="px-16">
-      <div class="flex items-center justify-between gap-4 font-medium">
-        <span class="pt-6 font-garamond text-xl">Rabu</span>
-        <div class="text-center w-12">
-          <p class="text-3xl pt-0 font-garamond">[09]</p> <!-- pt-2 juga di bagian resepsi -->
-          <p class="text-sm font-garamond">Agustus</p>
-        </div>
-        <span class="pt-6 font-garamond text-xl">2028</span>
+
+    <h3 class="font-Parisienne text-4xl">Resepsi</h3>
+
+    <!-- Tanggal -->
+    <div class="flex items-center justify-center gap-6 font-garamond">
+      <span class="text-xl">Rabu</span>
+      <div class="text-center">
+        <p class="text-3xl font-semibold">09</p>
+        <p class="text-xs tracking-wide">Agustus</p>
       </div>
+      <span class="text-xl">2028</span>
     </div>
-    <p class="mt-2 text-lg font-garamond">08.00 WIB</p>
-    <p class="italic text-sm font-garamond">Nayla's Home</p>
-    <p class="text-sm ">Jl. Binus No. 12, Jakarta Selatan</p>
-    <button class="mt-2 bg-[#778D80] text-white text-sm px-3 py-1 rounded-full">Lihat Lokasi</button>
-  </div>
-</div>
 
+    <p class="text-lg font-garamond">08.00 WIB</p>
+    <p class="text-2xl font-playball text-[#55685e]">Nayla's Home</p>
+    <p class="text-base font-cormorant max-w-xs mx-auto leading-relaxed">
+      Blok FB5 Nomor, Jl. Purwakarta, Cluster Menteng - Bintaro
+    </p>
 
+    <a href="https://maps.app.goo.gl/ADXxDD4BE7QhDnbN6"
+       class="inline-block mt-2 px-8 py-2.5 bg-[#7c8f84] hover:bg-[#8fa396] text-white rounded-full shadow-md text-sm font-medium">
+      Lihat Lokasi
+    </a>
   </div>
+
 </div>
